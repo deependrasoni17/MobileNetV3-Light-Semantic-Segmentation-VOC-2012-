@@ -295,11 +295,10 @@ Dice = (2 × |Pred ∩ GT|) / (|Pred| + |GT|)
 
 | Metric | Value |
 |---|---|
-| Binary Dice (Clean) | *Run eval.py to measure* |
-| Binary Dice (Corrupted) | *Run eval.py to measure* |
+| Binary Dice (Clean) | 76.50% |
+| Binary Dice (Augmented/Corrupted) | 67.01% |
+| GFLOPs per Image | 0.155054 |
 | Model Parameters | ~1.2 M |
-| FLOPs (300×300 input) | ~0.48 GFLOPs |
-
 ---
 
 ## Hardware Support
@@ -323,6 +322,6 @@ Dice = (2 × |Pred ∩ GT|) / (|Pred| + |GT|)
 
 ---
 
-## License
+## Dataset Link
 
-This project is for academic and research use. The PASCAL VOC dataset is subject to its own [terms of use](http://host.robots.ox.ac.uk/pascal/VOC/).
+https://www.kaggle.com/datasets/gopalbhattrai/pascal-voc-2012-dataset
