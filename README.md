@@ -1,10 +1,10 @@
-# 🧠 MobileNetV3-Light Semantic Segmentation (VOC 2012)
+# MobileNetV3-Light Semantic Segmentation (VOC 2012)
 
 > An ultra-lightweight semantic segmentation model built on **MobileNetV3-Small**, trained on the **PASCAL VOC 2012** dataset. Designed for fast inference with strict **300×300** resolution constraints and binary foreground/background mask output.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Model Architecture](#model-architecture)
@@ -29,11 +29,11 @@
 This project implements a **compact semantic segmentation pipeline** for the PASCAL VOC 2012 dataset. The model (`MobileNetV3LightSeg`) is engineered to minimize FLOPs and parameters while maintaining competitive segmentation accuracy, making it suitable for deployment on resource-constrained devices.
 
 **Key highlights:**
-- ⚡ Ultra-lightweight backbone: MobileNetV3-Small
-- 🎯 Strict 300×300 end-to-end inference
-- 🔁 Binary Dice metric for foreground/background evaluation
-- 🛡️ Robustness testing with corrupted inputs (noise, blur)
-- 🖥️ Supports CUDA, CPU, and Intel DirectML (Windows)
+-  Ultra-lightweight backbone: MobileNetV3-Small
+-  Strict 300×300 end-to-end inference
+-  Binary Dice metric for foreground/background evaluation
+-  Robustness testing with corrupted inputs (noise, blur)
+-  Supports CUDA, CPU, and Intel DirectML (Windows)
 
 ---
 
@@ -118,7 +118,7 @@ pip install -r requirements.txt
 
 This project uses the **PASCAL VOC 2012** train/val dataset.
 
-1. Download the dataset from the [official VOC site](http://host.robots.ox.ac.uk/pascal/VOC/) or Kaggle.
+1. Download the dataset from [official VOC site] or Kaggle[https://www.kaggle.com/datasets/gopalbhattrai/pascal-voc-2012-dataset].
 2. Extract it so the directory structure looks like this:
 
 ```
@@ -322,6 +322,3 @@ Dice = (2 × |Pred ∩ GT|) / (|Pred| + |GT|)
 
 ---
 
-## Dataset Link
-
-https://www.kaggle.com/datasets/gopalbhattrai/pascal-voc-2012-dataset
