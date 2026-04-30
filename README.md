@@ -150,7 +150,7 @@ python prepare_data.py \
 
 | Argument | Default | Description |
 |---|---|---|
-| `--voc_root` | *(required)* | Path to VOC root directory |
+| `--voc_root` | *Will get after running code* | Path to VOC root directory |
 | `--out_splits` | `voc2012_splits.json` | Output path for split JSON |
 | `--train_frac` | `0.8` | Fraction of data for training |
 | `--seed` | `42` | Random seed for reproducibility |
@@ -176,8 +176,8 @@ python train.py \
 
 | Argument | Default | Description |
 |---|---|---|
-| `--voc_root` | *(required)* | Path to VOC root directory |
-| `--splits_json` | *(required)* | Path to splits JSON |
+| `--voc_root` | *(Will get after running code)* | Path to VOC root directory |
+| `--splits_json` | *(Will get after running code)* | Path to splits JSON |
 | `--output_dir` | `./checkpoints` | Directory to save checkpoints |
 | `--epochs` | `100` | Total training epochs |
 | `--batch_size` | `8` | Training batch size |
@@ -217,9 +217,9 @@ python eval.py \
 
 | Argument | Default | Description |
 |---|---|---|
-| `--voc_root` | *(required)* | Path to VOC root directory |
-| `--splits_json` | *(required)* | Path to splits JSON |
-| `--checkpoint_path` | *(required)* | Path to `.pth` model checkpoint |
+| `--voc_root` | *(Will get after running code)* | Path to VOC root directory |
+| `--splits_json` | *(Will get after running code)* | Path to splits JSON |
+| `--checkpoint_path` | *(Will get after running code)* | Path to `.pth` model checkpoint |
 | `--batch_size` | `8` | Evaluation batch size |
 | `--img_size` | `300` | Input image resolution |
 | `--num_classes` | `21` | Number of segmentation classes |
@@ -253,9 +253,9 @@ python inference.py \
 
 | Argument | Default | Description |
 |---|---|---|
-| `--in_dir` | *(required)* | Path to input images folder |
+| `--in_dir` | *(Will get after running code)* | Path to input images folder |
 | `--out_dir` | `group_15_output` | Folder to save output binary masks |
-| `--checkpoint_path` | *(required)* | Path to `.pth` model checkpoint |
+| `--checkpoint_path` | *(Will get after running code)* | Path to `.pth` model checkpoint |
 | `--img_size` | `300` | Input resolution (must be 300) |
 | `--use_dml` | `False` | Use Intel DirectML (Windows) |
 
